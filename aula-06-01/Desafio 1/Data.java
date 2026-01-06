@@ -1,0 +1,17 @@
+import java.util.Date;
+
+public class Data {
+    
+  public static void main(String[] args) {
+     Date data = new Date();
+
+     int dia  = data.getDate();
+     int mes  = data.getMonth();
+     int ano  = data.getYear();
+
+     System.out.println("Dia: " + dia);
+     System.out.println("Mes: " + mes);
+     System.out.println("Ano: " + ano);
+  }
+}
+
