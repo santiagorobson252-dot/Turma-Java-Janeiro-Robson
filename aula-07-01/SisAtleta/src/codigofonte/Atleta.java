@@ -1,6 +1,6 @@
 package codigofonte;
 
-public class Atleta {
+public abstract class Atleta {
 
     private String nomeAtleta;
     private int idade;
@@ -23,4 +23,6 @@ public class Atleta {
         }
         this.idade = validaIdade;
     }
+
+    public abstract Double calcularPatrocinio();
 }

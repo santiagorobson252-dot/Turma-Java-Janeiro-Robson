@@ -9,13 +9,14 @@ public class Principal {
         System.out.println("Cadastro de atleta");
         Scanner entradaDeDados = new Scanner(System.in);
 
-        JogadorBasquete jogadorBasquete = new JogadorBasquete();
-        JogadorFutsal jogadorFutsal = new JogadorFutsal();
+        Atleta atleta = null;
 
         System.out.println("Digite B para Jogador de basquete e F para Jogador de futsal: ");
         String opcao = entradaDeDados.next();
 
         if (opcao.equals("B")) {
+
+            JogadorBasquete jogadorBasquete = new JogadorBasquete();
 
             System.out.println("Digite o Nome do Jogador de basquete:");
             jogadorBasquete.setNomeAtleta(entradaDeDados.next());
@@ -29,13 +30,16 @@ public class Principal {
             System.out.println("Digite o valor por ponto do jogador:");
             jogadorBasquete.setValorPorPontos(entradaDeDados.nextDouble());
 
-            System.out.println("O nome do jogador: " + jogadorBasquete.getNomeAtleta());
-            System.out.println("A idade do jogador: " + jogadorBasquete.getIdade());
-            System.out.println("O braço mais forte: " + jogadorBasquete.getBracoMaisForte());
-            System.out.println("O valor por pontos: " + jogadorBasquete.getValorPorPontos());
+            atleta = jogadorBasquete;
+
+            System.out.println("Nome do atleta: " + atleta.getNomeAtleta());
+            System.out.println("Idade do atleta: " + atleta.getIdade());
+            System.out.println("Valor do patrocínio: " + atleta.calcularPatrocinio());
         }
 
         if (opcao.equals("F")) {
+
+            JogadorFutsal jogadorFutsal = new JogadorFutsal();
 
             System.out.println("Digite o Nome do Jogador De Futsal: ");
             jogadorFutsal.setNomeAtleta(entradaDeDados.next());
@@ -49,11 +53,11 @@ public class Principal {
             System.out.println("Digite o valor por gol do Jogador De Futsal: ");
             jogadorFutsal.setValorPorGols(entradaDeDados.nextDouble());
 
-            System.out.println("O nome do jogador de futsal: " + jogadorFutsal.getNomeAtleta());
-            System.out.println("A idade do jogador de futsal: " + jogadorFutsal.getIdade());
-            System.out.println("A perna mais forte: " + jogadorFutsal.getPernaMaisForte());
-            System.out.println("O valor por gols: " + jogadorFutsal.getValorPorGols());
-        }
+            atleta = jogadorFutsal;
 
+            System.out.println("Nome do atleta: " + atleta.getNomeAtleta());
+            System.out.println("Idade do atleta: " + atleta.getIdade());
+            System.out.println("Valor do patrocínio: " + atleta.calcularPatrocinio());
+        }
     }
 }

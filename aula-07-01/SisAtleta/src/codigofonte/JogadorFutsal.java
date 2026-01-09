@@ -22,4 +22,11 @@ public class JogadorFutsal extends Atleta {
         util.validarValorPorGols(valorPorGols);
         this.valorPorGols = valorPorGols;
     }
+
+    @Override
+    public Double calcularPatrocinio() {
+        Double parteBase = valorPorGols * 0.30;
+        Double parteGols = (valorPorGols * 4) * 0.30;
+        return parteBase + parteGols;
+    }
 }

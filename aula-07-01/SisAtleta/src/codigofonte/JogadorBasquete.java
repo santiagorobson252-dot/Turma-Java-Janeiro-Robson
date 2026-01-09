@@ -22,4 +22,11 @@ public class JogadorBasquete extends Atleta {
         util.validarValorPorPontos(valorPorPontos);
         this.valorPorPontos = valorPorPontos;
     }
+
+    @Override
+    public Double calcularPatrocinio() {
+        Double parteBase = valorPorPontos * 0.20;
+        Double partePontos = (valorPorPontos * 3) * 0.20;
+        return parteBase + partePontos;
+    }
 }
