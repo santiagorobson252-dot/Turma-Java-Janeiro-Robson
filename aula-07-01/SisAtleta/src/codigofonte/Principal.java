@@ -18,43 +18,41 @@ public class Principal {
         if (opcao.equals("B")) {
 
             System.out.println("Digite o Nome do Jogador de basquete:");
-            jogadorBasquete.nomeAtleta = entradaDeDados.next();
+            jogadorBasquete.setNomeAtleta(entradaDeDados.next());
 
             System.out.println("Digite a idade do jogador:");
-            jogadorBasquete.idade = entradaDeDados.nextInt();
+            jogadorBasquete.setIdade(entradaDeDados.nextInt());
 
             System.out.println("Digite o braço mais forte do jogador:");
-            jogadorBasquete.bracoMaisForte = entradaDeDados.next();
+            jogadorBasquete.setBracoMaisForte(entradaDeDados.next());
 
             System.out.println("Digite o valor por ponto do jogador:");
-            jogadorBasquete.valorPorPontos = entradaDeDados.nextDouble();
+            jogadorBasquete.setValorPorPontos(entradaDeDados.nextDouble());
 
-            System.out.println("O nome do jogador: " + jogadorBasquete.nomeAtleta);
-            System.out.println("A idade do jogador: " + jogadorBasquete.idade);
-            System.out.println("A perna mais forte: " + jogadorBasquete.bracoMaisForte);
-            System.out.println("O valor por gols: " + jogadorBasquete.valorPorPontos);
-
+            System.out.println("O nome do jogador: " + jogadorBasquete.getNomeAtleta());
+            System.out.println("A idade do jogador: " + jogadorBasquete.getIdade());
+            System.out.println("O braço mais forte: " + jogadorBasquete.getBracoMaisForte());
+            System.out.println("O valor por pontos: " + jogadorBasquete.getValorPorPontos());
         }
 
         if (opcao.equals("F")) {
 
             System.out.println("Digite o Nome do Jogador De Futsal: ");
-            jogadorFutsal.nomeAtleta = entradaDeDados.next();
+            jogadorFutsal.setNomeAtleta(entradaDeDados.next());
 
             System.out.println("Digite a Idade do Jogador De Futsal: ");
-            jogadorFutsal.idade = entradaDeDados.nextInt();
+            jogadorFutsal.setIdade(entradaDeDados.nextInt());
 
             System.out.println("Digite a perna mais forte do Jogador De Futsal: ");
-            jogadorFutsal.pernaMaisForte = entradaDeDados.next();
+            jogadorFutsal.setPernaMaisForte(entradaDeDados.next());
 
             System.out.println("Digite o valor por gol do Jogador De Futsal: ");
-            jogadorFutsal.valorPorGols = entradaDeDados.nextDouble();
+            jogadorFutsal.setValorPorGols(entradaDeDados.nextDouble());
 
-            System.out.println("O nome do jogador de futsal: " + jogadorFutsal.nomeAtleta);
-            System.out.println("A idade do jogador de futsal: " + jogadorFutsal.idade);
-            System.out.println("O braco mais forte: " + jogadorFutsal.pernaMaisForte);
-            System.out.println("O valor por Pontos: " + jogadorFutsal.valorPorGols);
-
+            System.out.println("O nome do jogador de futsal: " + jogadorFutsal.getNomeAtleta());
+            System.out.println("A idade do jogador de futsal: " + jogadorFutsal.getIdade());
+            System.out.println("A perna mais forte: " + jogadorFutsal.getPernaMaisForte());
+            System.out.println("O valor por gols: " + jogadorFutsal.getValorPorGols());
         }
 
     }

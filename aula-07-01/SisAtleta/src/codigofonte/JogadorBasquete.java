@@ -1,8 +1,25 @@
 package codigofonte;
 
 public class JogadorBasquete extends Atleta {
-	String bracoMaisForte;
-	Double valorPorPontos;
 
+    private String bracoMaisForte;
+    private Double valorPorPontos;
 
+    public String getBracoMaisForte() {
+        return bracoMaisForte;
+    }
+
+    public void setBracoMaisForte(String bracoMaisForte) {
+        this.bracoMaisForte = bracoMaisForte;
+    }
+
+    public Double getValorPorPontos() {
+        return valorPorPontos;
+    }
+
+    public void setValorPorPontos(Double valorPorPontos) {
+        Utilitario util = new Utilitario();
+        util.validarValorPorPontos(valorPorPontos);
+        this.valorPorPontos = valorPorPontos;
+    }
 }
