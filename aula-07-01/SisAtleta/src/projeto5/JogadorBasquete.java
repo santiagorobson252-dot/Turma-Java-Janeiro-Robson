@@ -21,16 +21,16 @@ public class JogadorBasquete extends Atleta {
         VerificarValorNegativo(valorPorPontos);
         this.valorPorPontos = valorPorPontos;
     }
-
-    @Override
-    public Double calcularPatrocinio() {
-        Double parteBase = valorPorPontos * 0.20;
-        Double partePontos = (valorPorPontos * 3) * 0.20;
-        return parteBase + partePontos;
-    }
-
+    
 	@Override // Implementar o metodo que está indicado na classe pai
 	protected Double calcularPagamento() {
 				return valorPorPontos*30;
+	}
+
+	@Override
+	protected Double calculaPatrocinio() {
+		Double porcentagemSalario = calcularPagamento() * 0.20;
+        Double porcentagemGols = (valorPorPontos * 3) * 0.20;		
+        return porcentagemSalario + porcentagemGols;
 	}
 }

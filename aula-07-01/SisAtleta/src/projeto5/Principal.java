@@ -38,7 +38,9 @@ public class Principal {
 			System.out.println("A idade do jogador de basquete é : " + jogadorBasquete.getIdade());
 			System.out.println("A Braço mais forte é : " + jogadorBasquete.getBracoMaisForte());
 			System.out.println("O valor por pontos: $ " + jogadorBasquete.getValorPorPontos());
-			System.out.println("O valor do pagamento é: " + jogadorBasquete.calcularPagamento());
+			System.out.println("O valor do pagamento é R$: " + jogadorBasquete.calcularPagamento());
+			System.out.println("O valor do Patrocinio é R$: " + jogadorBasquete.calculaPatrocinio());
+
 
 		}
 
@@ -60,7 +62,8 @@ public class Principal {
 			System.out.println("A idade do jogador de futsal é: " + jogadorFutsal.getIdade());
 			System.out.println("A perna  mais forte é: " + jogadorFutsal.getPernaMaisForte());
 			System.out.println("O valor por gols: $ " + jogadorFutsal.getValorPorGols());
-			System.out.println("O valor do pagamento é: " + jogadorFutsal.calcularPagamento());
+			System.out.println("O valor do pagamento é R$: " + jogadorFutsal.calcularPagamento());
+			System.out.println("O valor do Patrocinio é R$: " + jogadorFutsal.calculaPatrocinio());
 
 		}
 		System.out.println("**************************FIM DE CADASTRO***********************");

@@ -22,17 +22,17 @@ public class JogadorFutsal extends Atleta {
         VerificarValorNegativo(valorPorGols);     //Chama o método validarValorPorGols do objeto util, 
                                                                                           //passando a variável valorPorGols como parâmetro.
         this.valorPorGols = valorPorGols;
-    }
-
-    @Override
-    public Double calcularPatrocinio() {
-        Double parteBase = valorPorGols * 0.30;
-        Double parteGols = (valorPorGols * 4) * 0.30;
-        return parteBase + parteGols;
-    }
+    }   
 
 	@Override
 	protected Double calcularPagamento() {
 		return valorPorGols*50;
+	}
+
+	@Override
+	protected Double calculaPatrocinio() {
+		Double porcentagemSalario = calcularPagamento() * 0.30;
+        Double porcentagemGols = (valorPorGols * 4) * 0.30;
+        return porcentagemSalario + porcentagemGols;
 	}
 }

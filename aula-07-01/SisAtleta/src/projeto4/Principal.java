@@ -1,5 +1,5 @@
 package projeto4;
-//alcule o pagamento dos atletas(Futsal gols * 50 e Basquete pontos *30), utilize o polimorfismo. 
+//Calcule o pagamento dos atletas(Futsal gols * 50 e Basquete pontos *30), utilize o polimorfismo. 
 //Utilize encapsulamento e não permita a inserção de valores negativos.
 //Utilizando o metodo de verificação de negadas dentro da classe pai(Atleta), não sendo necessario instanciar nas classes filhas
 
@@ -38,7 +38,7 @@ public class Principal {
 			System.out.println("A idade do jogador de basquete é : " + jogadorBasquete.getIdade());
 			System.out.println("A Braço mais forte é : " + jogadorBasquete.getBracoMaisForte());
 			System.out.println("O valor por pontos: $ " + jogadorBasquete.getValorPorPontos());
-			System.out.println("O valor do pagamento é: " + jogadorBasquete.calcularPagamento());
+			System.out.println("O valor do pagamento é R$: " + jogadorBasquete.calcularPagamento());
 
 		}
 
@@ -60,7 +60,7 @@ public class Principal {
 			System.out.println("A idade do jogador de futsal é: " + jogadorFutsal.getIdade());
 			System.out.println("A perna  mais forte é: " + jogadorFutsal.getPernaMaisForte());
 			System.out.println("O valor por gols: $ " + jogadorFutsal.getValorPorGols());
-			System.out.println("O valor do pagamento é: " + jogadorFutsal.calcularPagamento());
+			System.out.println("O valor do pagamento é R$: " + jogadorFutsal.calcularPagamento());
 
 		}
 		System.out.println("**************************FIM DE CADASTRO***********************");

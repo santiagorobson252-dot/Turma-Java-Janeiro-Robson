@@ -6,8 +6,8 @@ public abstract class Atleta {
     private int idade;
    
     //Polimorfismo
-    protected abstract Double calcularPagamento(); //apenas a assinatura, ou seja os filhos precisam implementar o comportamento
-                                                                                                 //Os filhos são obrigados a implementar
+    protected abstract Double calcularPagamento();                
+    protected abstract Double calculaPatrocinio();               
 
     public void VerificarValorNegativo(double valor) { //Aqui é mantido a herança para a filhas
         if (valor < 0) {
@@ -34,5 +34,4 @@ public abstract class Atleta {
         this.idade = validaIdade;
     }
 
-    public abstract Double calcularPatrocinio();
 }
