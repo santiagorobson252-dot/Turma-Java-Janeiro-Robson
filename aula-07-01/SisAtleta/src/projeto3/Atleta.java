@@ -1,10 +1,10 @@
-package codigofonte;
+package projeto3;
 
 public abstract class Atleta {
 
     private String nomeAtleta;
     private int idade;
-
+       
     public String getNomeAtleta() {
         return nomeAtleta;
     }

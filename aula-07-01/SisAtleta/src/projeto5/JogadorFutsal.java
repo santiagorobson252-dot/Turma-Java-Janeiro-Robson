@@ -1,4 +1,4 @@
-package codigofonte;
+package projeto5;
 
 public class JogadorFutsal extends Atleta {
 
@@ -18,8 +18,9 @@ public class JogadorFutsal extends Atleta {
     }
 
     public void setValorPorGols(Double valorPorGols) {
-        Utilitario util = new Utilitario();
-        util.validarValorPorGols(valorPorGols);
+    	
+        VerificarValorNegativo(valorPorGols);     //Chama o método validarValorPorGols do objeto util, 
+                                                                                          //passando a variável valorPorGols como parâmetro.
         this.valorPorGols = valorPorGols;
     }
 
@@ -29,4 +30,9 @@ public class JogadorFutsal extends Atleta {
         Double parteGols = (valorPorGols * 4) * 0.30;
         return parteBase + parteGols;
     }
+
+	@Override
+	protected Double calcularPagamento() {
+		return valorPorGols*50;
+	}
 }

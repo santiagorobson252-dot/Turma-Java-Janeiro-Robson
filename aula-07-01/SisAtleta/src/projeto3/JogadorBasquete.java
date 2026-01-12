@@ -1,4 +1,4 @@
-package codigofonte;
+package projeto3;
 
 public class JogadorBasquete extends Atleta {
 
@@ -19,7 +19,7 @@ public class JogadorBasquete extends Atleta {
 
     public void setValorPorPontos(Double valorPorPontos) {
         Utilitario util = new Utilitario();
-        util.validarValorPorPontos(valorPorPontos);
+        util.VerificarValorNegativo(valorPorPontos);
         this.valorPorPontos = valorPorPontos;
     }
 
