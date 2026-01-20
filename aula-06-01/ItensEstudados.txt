@@ -1,0 +1,60 @@
+1 - Qual o método que inicia a execução no JAVA?
+É o método main que o Java procura primeiro para começar a rodar o programa.
+Se não tiver main, o programa nem começa.
+
+2 - O que é uma Classe?
+Classe é como se fosse um molde, modelo, o projeto das coisas.
+
+3 - Como criar uma Classe?
+class Aluno {
+   String nome;
+   int idade
+}
+
+4 - O que é um Método?
+Método é a ação que a classe sabe ou deve fazer.
+
+5 - O que uma variável?
+Variável é um local na memória que guarda um determinado valor.
+
+
+6 - O que é uma condicional (comando if)?
+É usado para tomar determinada decisão. Ex: Se algo for verdadeiro faz alguma coisa.
+
+7 - O que é Herança?
+Herança é quando uma classe aproveita coisas de outra classe
+
+8 - Como comparar String?
+utilizando equalsIgnoreCase()
+
+9 - Como receber dados do Usuario pelo console?
+usando o import java.util.Scanner;
+
+10 - Por que Tivemos que migrar do java 1 para o java 17?
+Porque o Java 1 é velho, inseguro e não recebe mais suporte, enquanto o Java 17 é moderno, seguro e suportado, além de novas atualizações.
+
+11 - O que é compilar?
+Compilar é traduzir o código que você escreveu para uma linguagem que o computador entende
+
+12 - O que é executar?
+Executar é rodar o programa e fazer ele funcionar de verdade.
+Depois que você compila, vem a hora de executar.
+
+13 - O que é erro de compilação?
+Erro de compilação é quando o Java não consegue transformar seu código em programa.
+você escreveu algo errado, e o compilador barra antes de rodar.
+
+14 - O que é erro de execução?
+Erro de execução é quando o programa COMPILA, mas quebra quando está rodando
+Ex:
+O código passou na compilação
+Mas na hora de executar, algo dá errado
+
+15 - Como usar herança no java?
+class Filho extends Pai
+A Class filho herda tudo da classe pai
+
+16 - Como concatenar Concatenação String?
+Adicionando o + entre os itens que serão concatenados
+Ex: String msg = "Olá " + nome;
+
